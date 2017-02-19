@@ -6,7 +6,7 @@
  *   2 - #1C9C8F
  *   1 - #535353
  *   Color Scheme - Flat UI
- *   5 - rgba(33, 47, 63, .6);
+ *   5 - #212F3F rgba(33, 47, 63, .6);
  *   4 - #E13329
  *   3 - #E7ECEE
  *   2 - #2682D5
@@ -41,7 +41,7 @@ p, ul {
 }
 
 ul li {
-  margin-left: 30px;;
+  margin-left: 30px;
 }
 
 section {
@@ -50,7 +50,25 @@ line-height: 1.4;
 }
 
 a{
-  color: #ddd;
+  color: #212F3F;
+  font-weight: bold;
+  text-decoration: none;
+  border-bottom: 2px solid #212F3F;
+  padding: 2px;
+}
+
+a:hover {
+  background-color: #212F3F;
+  color: white;
+}
+
+a:active {
+  position: relative;
+  top: 1px;
+}
+
+a.active {
+  border-bottom: none;
 }
 
 .content-wrapper {
@@ -120,9 +138,52 @@ header h2 {
   background: #E7ECEE;
 }
 
+#badges {
+  text-align: center;
+  max-height: 400px;
+  overflow: auto;
+}
+
+.course {
+  background: #F5F5F5;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-shadow: 1px 1px 5px #EAEAEA;
+  display: inline-block;
+  height: 350px;
+  margin: 20px 10px;
+  padding: 15px 10px;
+  width: 180px;
+}
+
+.course h3 {
+  color: #999;
+  font-size: 1.9rem;
+  font-weight: 200;
+  min-height: 80px;;
+}
+
+.course img {
+  border: none;
+  height: 150px;
+  margin-bottom: 20px;
+  max-width: 100%;
+  width: 150px;
+}
+
+.course a {
+  display: block;
+}
+
 .contact {
   background: #2682D5;
   color: #ddd;
+  text-align: center;
+}
+
+.contact li {
+  display: inline-block;
+  margin: 0 20px;
 }
 
 footer {
