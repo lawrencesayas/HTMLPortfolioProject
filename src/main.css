@@ -6,7 +6,7 @@
  *   2 - #1C9C8F
  *   1 - #535353
  *   Color Scheme - Flat UI
- *   5 - #212F3F rgba(33, 47, 63, .6);
+ *   5 - #263650 rgba(33, 47, 63, .6);
  *   4 - #E13329
  *   3 - #E7ECEE
  *   2 - #2682D5
@@ -50,25 +50,27 @@ line-height: 1.4;
 }
 
 a{
-  color: #212F3F;
+  color: #263650; /*#212F3F;*/
   font-weight: bold;
   text-decoration: none;
-  border-bottom: 2px solid #212F3F;
+  border-bottom: 2px solid #263650;
   padding: 2px;
 }
 
 a:hover {
-  background-color: #212F3F;
+  background-color: #263650;
+  border-radius: 10px;
   color: white;
 }
 
 a:active {
+  border-bottom: none;
   position: relative;
   top: 1px;
 }
 
-a.active {
-  border-bottom: none;
+a:focus{
+  text-decoration: none;
 }
 
 .content-wrapper {
@@ -138,6 +140,10 @@ header h2 {
   background: #E7ECEE;
 }
 
+/*
+ *   COURSE BADGES
+ */
+
 #badges {
   text-align: center;
   max-height: 400px;
@@ -175,16 +181,47 @@ header h2 {
   display: block;
 }
 
+/*
+ *   CONTACT
+ */
+
 .contact {
   background: #2682D5;
   color: #ddd;
   text-align: center;
 }
 
+.contact a {
+    background-color: #263650;
+    border-radius: 10px;
+    color: #ccc;
+    font-weight: normal;
+    margin-top: 10px;
+    padding: 5px 10px;
+}
+
+.contact a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.contact a:active {
+  color: #fff;
+  text-decoration: none;
+}
+
+.contact a:focus {
+  color: #fff;
+  text-decoration: none;
+}
 .contact li {
   display: inline-block;
   margin: 0 20px;
 }
+
+/*
+ *   FOOTER
+ */
 
 footer {
   background-color: #1D6AAD; /*#444;*/
