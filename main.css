@@ -198,6 +198,7 @@ header h2 {
     font-weight: normal;
     margin-top: 10px;
     padding: 5px 10px;
+    width: 100%;
 }
 
 .contact a:hover {
@@ -216,7 +217,8 @@ header h2 {
 }
 .contact li {
   display: inline-block;
-  margin: 0 20px;
+  margin: 0 1.5%;
+  width: 10%;
 }
 
 /*
