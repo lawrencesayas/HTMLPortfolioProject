@@ -99,12 +99,6 @@ header {
   text-align: center;
 }
 
-@media only screen and (max-device-width: 420px)  {
-  header {
-    background-size: auto 100%;
-  }
-}
-
 header:before {
   background: rgba(33, 47, 63, .6);
   bottom: 0;
@@ -134,6 +128,15 @@ header h1 {
 
 header h2 {
   font-size: 1.5em;
+}
+
+@media only screen and (max-width: 420px)  {
+  body{
+    font-size: 1em;
+  }
+  header {
+    background-size: auto 170%;
+  }
 }
 
 .tagline {
@@ -229,7 +232,7 @@ header h2 {
   width: 12%;
 }
 
-@media only screen and (max-device-width: 420px)  {
+@media only screen and (max-width: 420px)  {
   .contact li {
     display: block;
     width: 100%;
