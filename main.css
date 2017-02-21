@@ -232,6 +232,7 @@ header h2 {
 @media only screen and (max-device-width: 420px)  {
   .contact li {
     display: block;
+    width: inherit;
   }
 }
 
