@@ -99,6 +99,12 @@ header {
   text-align: center;
 }
 
+@media only screen and (max-device-width: 420px)  {
+  header {
+    background-size: auto 100%;
+  }
+}
+
 header:before {
   background: rgba(33, 47, 63, .6);
   bottom: 0;
@@ -193,11 +199,13 @@ header h2 {
 .contact a {
     background-color: #263650;
     border-radius: 10px;
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.12), inset 1px 1px 0px rgba(255,255,255,0.2);
     color: #ccc;
     font-size: .81818em;
     font-weight: normal;
     margin-top: 10px;
     padding: 5px 10px;
+    text-align: center;
     width: 100%;
 }
 
@@ -218,7 +226,13 @@ header h2 {
 .contact li {
   display: inline-block;
   margin: 0 1.5%;
-  width: 10%;
+  width: 12%;
+}
+
+@media only screen and (max-device-width: 420px)  {
+  .contact li {
+    display: block;
+  }
 }
 
 /*
